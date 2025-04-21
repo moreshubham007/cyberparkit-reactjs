@@ -1,0 +1,148 @@
+/* Services Overview */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.service-detailed-card {
+  display: flex;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detailed-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-detailed-card .service-icon {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 30px;
+}
+
+.service-detailed-card .service-icon i {
+  font-size: 40px;
+  color: white;
+}
+
+.service-content {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.service-content h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.service-content p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+}
+
+.service-features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.service-features li {
+  color: var(--gray-text);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-features li i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.service-cta {
+  margin-top: 20px;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* How We Work Section */
+.how-we-work {
+  background-color: var(--darker-bg);
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateX(10px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  color: var(--gray-text);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .service-detailed-card {
+    flex-direction: column;
+  }
+  
+  .service-detailed-card .service-icon {
+    min-width: auto;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 120px 0 60px;
+  }
+} 
