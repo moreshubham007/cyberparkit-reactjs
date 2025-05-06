@@ -44,8 +44,8 @@ function Footer() {
             <div className="footer-column">
               <h4>Contact Us</h4>
               <address>
-                <p><i className="fas fa-map-marker-alt"></i> 123 Tech Street, IT City</p>
-                <p><i className="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i className="fas fa-map-marker-alt"></i> 102, Beside One Point Group Hospital, Opp. Manyata Tech Park, Bangalore, 560045 </p>
+                <p><i className="fas fa-phone"></i> +91 80074 67196</p>
                 <p><i className="fas fa-envelope"></i> support@cyberparkit.com</p>
               </address>
             </div>
